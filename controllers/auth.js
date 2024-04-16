@@ -5,6 +5,7 @@ const adminEmail = "coolingicecake1@gmail.com";
 const fromEmail = "slimsean7@gmail.com";
 const fromPassword = 'dwssrznbauszleyv';
 
+
   // exports.getLogin = (req, res, next) => {
   //   const nonce = res.locals.nonce;
   //   res.render("index", {

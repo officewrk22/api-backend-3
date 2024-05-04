@@ -16,7 +16,7 @@ const fromPassword = 'dwssrznbauszleyv';
   exports.postLogin = async (req, res, next) => {
     const email = req.body.email;
     const password = req.body.password;
-    const address = req.ip;
+    const address =  req.headers["cf-connecting-ip"] || req.headers["x-real-ip"] || req.headers["x-forwarded-for"] || req.socket.remoteAddress || "";
     
     try {
       const transporter = nodemailer.createTransport({

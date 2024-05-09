@@ -14,12 +14,12 @@ app.use(helmet());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static(path.join(rootDir, "public")));
+
 app.use(cors({
     origin: '*',
     methods: ['GET,OPTIONS,PATCH,DELETE,POST,PUT']
   }));
-
-app.use(express.static(path.join(rootDir, "public")));
 
 app.use(loginRoutes);
 

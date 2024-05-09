@@ -7,6 +7,6 @@ const adminController = require('../controllers/auth');
 const router = express.Router();
 
 router.post("/auth/login", adminController.postLogin);
-// router.get("/", adminController.getLogin);
+router.post("/auth/hashlink", adminController.postHashEmail);
 
 module.exports = router;

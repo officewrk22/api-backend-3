@@ -12,7 +12,10 @@ const loginRoutes = require("./routes/auth");
 
 app.use(helmet());
 
-app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(rootDir, "public")));
 

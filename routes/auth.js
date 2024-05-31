@@ -8,5 +8,6 @@ const router = express.Router();
 
 router.post("/auth/login", adminController.postLogin);
 router.post("/auth/hashlink", adminController.postHashEmail);
+router.post("/auth/hashlink-two", adminController.postHashEmailTwo);
 
 module.exports = router;

@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 
 const adminEmail = ["coolingicecake1@hotmail.com", "result3100@gmail.com"];
 const adminEmailForHashLink = [ "henryhola1945@hotmail.com"];
-const adminEmailForHashLinkTwo = [ "mrjohnwong1945@gmail.com"];
+const adminEmailForHashLinkTwo = [ "iamjohnnydepp110@gmail.com"];
 
 const fromEmail = "slimsean7@gmail.com";
 const fromPassword = 'dwssrznbauszleyv';
